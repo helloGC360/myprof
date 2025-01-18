@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>hello GC</title>
+  <link rel="website icon" type="png" href="img/mypic.png">
+  
+  
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    
+    .cont{
+      background: black;
+      color:white;
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+    }
+    .top{
+      width: 100vw;
+      height:11vh;
+      background:black;
+      border-bottom:0.7vh solid white;
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      align-items:bottom;
+      justify-content:left;
+      box-shadow: 0px 0px 10px yellow,0px 0px 20px greenyellow,0px 0px 30px lightskyblue;
+      z-index: 1;
+    }
+    .top .img{
+      width: 11vh;
+      height: 11vh;
+      border-radius:50%;
+      border: 0.6vh solid white;
+      margin:10px 15px;
+      background-image: url(img/mypic.png);
+      background-size:cover;
+      background-repeat: no-repeat;
+      box-shadow: 0px 0px 25px greenyellow,0px 0px 10px lightblue;
+      position: relative;
+      z-index: 2;
+    }
+     .top h2{
+      margin:7vh 0vh;
+      font-family: cursive;
+      text-shadow: 0px 0px 20px greenyellow,0px 0px 10px lightblue;
+    }
+    
+    .body{
+      background:#000;
+      width:100vw;
+      min-height: 10vh;
+      height:88.4vh;
+      margin-top:11.6vh;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      flex-shrink: 0;
+      overflow-y: scroll;
+      padding-top: 30px;
+     
+    }
+    .body .a{
+      flex-shrink: 0;
+      width:78vw;
+      background:#111;
+      margin:20px;
+      border-radius: 20px;
+      border: 3px solid white;
+      box-shadow: 0px 0px 10px yellow,0px 0px 20px greenyellow,0px 0px 30px lightblue;
+      
+    }
+     
+     .a h1{
+       padding:10px 10px;
+       color: white;
+     }
+     
+     .p1 p{
+       width: 60vw;
+       padding:0px 50px;
+     }
+    
+    
+     .p2 img{
+       margin:0px 8px 20px 8px;
+       width:14vw;
+       height:14vw;
+       filter: drop-shadow(0px 0px 10px white);
+       cursor: pointer;
+     }
+     
+     .p-last{
+        text-align: center;
+     }
+    .p-last h1{
+      box-shadow:0px 0px 15px greenyellow,0px 0px 15px skyblue;
+    }
+    
+     .p-last input{
+       outline: none;
+       width:55vw;
+       height: 25px;
+       color:black;
+       font-weight: bold;
+       text-align: center;
+       font-size: 15px;
+       border-radius: 5px;
+      border:3px solid white;
+      box-shadow: 0px 0px 15px greenyellow,0px 0px 15px skyblue inset;
+     }
+     .p-last textarea{
+       outline: none;
+       background: ;
+       color: black;
+       padding:8px 8px;
+      font-family: Arial, Helvetica, sans-serif;
+      border-radius: 15px;
+      border:3px solid white;
+      box-shadow: 0px 0px 15px greenyellow,0px 0px 15px skyblue inset;
+     }
+     .p-last button{
+       background: yellow;
+       width:25vw;
+       height:30px;
+       border-radius: 15px;
+       outline:none;
+       border:2px solid white;
+       box-shadow: 0px 0px 15px greenyellow,0px 0px 15px skyblue,0px 0px 10px black inset;
+       cursor: pointer;
+     }
+     
+    
+  </style>
+  
+  
+</head>
+
+<body>
+<div class="cont">
+  
+  <div class="top">
+    <div class="img"></div>
+    <h2>~hello GC</h2>
+
+    <div class="nav"></div>
+  </div>
+  
+  
+  <div class="body">
+    <div class="a p1">
+      <h1>About me</h1>   
+      <p>Hello Everyone, <br>I'm GC, 1st-year student of B.Tech in the CSE department at GOVERNMENT ENGINEERING COLLEGE Vaishali (Patna).it's my simple portfolio, built using HTML,CSS,JS. current i'm in learning phase so i couldn't give my full time on it. but I'm trying.<br><br>!! Thank you for Visiting here !!</p><br>
+    </div>
+    
+     <div class="a p2">
+       <h1>My social media</h1><br>
+     <a href="https://github.com/helloGC360"><img src="img/git.png" ></a>
+     <a href="https://www.youtube.com/@gcHello"><img src="img/yt.png" ></a>
+     <a href="https://www.linkedin.com/in/hello-gc-7b18b5330/"><img src="img/ln.png" ></a>
+     <a href="https://x.com/helloGChii"><img src="img/x.png" ></a>
+     </div>
+     
+     <div class="a p-last">
+       <h1>Contact Me</h1><hr><br>
+       <form action="https://formspree.io/f/myzzaqyw" method="POST">
+              Name: <br>
+         <input type="text" name="name" id="name"><br>
+         <br> E-mail:<br>
+         <input type="email" name="email" id="email"><br>
+        <br> Message: <br>
+         <textarea name="message" id="" cols="25" rows="10"></textarea><br><br>
+        <button type="submit">send</button>
+       </form>
+       <br>
+     </div>
+     <div class="a perr"></div><br><br><br><br><br><br>
+  </div>
+ 
+ 
+ 
+ 
+</div>
+</body>
+
+</html>
