@@ -140,6 +140,7 @@
        top:0px;
        left:60px;
        background-image: url("img/bt2.gif");
+       filter: drop-shadow(4px 4px 10px greenyellow);
      }
      
    .body .bt1{
