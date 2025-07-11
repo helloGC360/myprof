@@ -138,7 +138,7 @@
        background-size: cover;
        position:fixed;
        top:0px;
-       left:60px;
+       left:45vw;
        background-image: url("img/bt2.gif");
        filter: drop-shadow(4px 4px 10px greenyellow);
      }

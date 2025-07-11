@@ -1,8 +1,16 @@
 const manu=document.getElementById('manu');
 const nav=document.getElementsByClassName('nav');
 const ch=document.getElementsByClassName('ch');
+const a=document.getElementsByTagName("a");
+ for(let i=0;i<a.length;i++){
+        a[i].setAttribute("target","_blank");
+      }
+      
+
+
 var n=ch.length;
 let k=1;
+
   function an(){
     if(k==1){
       manu.style=`width:200px;height:${n*35}px;transition:0.5s`;
